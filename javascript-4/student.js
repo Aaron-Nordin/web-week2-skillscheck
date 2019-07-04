@@ -5,7 +5,7 @@
 // Create a new array called 'faveColors' and set it your three favorite colors as strings.
 
 // CODE HERE
-let faveColors = ["bue", "green", "black"]
+let faveColors = ["blue", "green", "black"]
 
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstname, superHeroName, homeTown, superPowers, superPowerXP, profileImage. 
@@ -29,7 +29,7 @@ let me = {
     homeTown: "Huntsville",
     superPowers: ["reading", "napping", "snooze-buttoning"],
     superPowerXP: () => {return Math.floor(Math.random() * 100) + 1},
-    profileImage: `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
+    profileImage: () => {return`https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`}
 }
 
 //////////////////Step 3////////////////////
@@ -53,7 +53,7 @@ function setColor(arr) {
             arr[key] = "#4D4DFF"
         }
     }
-    backgroun(arr[0], arr[1], arr[2])
+    background(arr[0], arr[1], arr[2])
 }
 
 //////////////////Step 5////////////////////
@@ -62,7 +62,7 @@ function setColor(arr) {
 // CODE HERE
 function setPowers(arr) {
     for(let key in arr){
-        f
+        createLi(arr[key])
     }
 }
 
@@ -70,3 +70,9 @@ function setPowers(arr) {
 //Lastly, create a function called redactInfo that will take in an obj as a paramter. Let's imagine our super hero needs to go undercover and we need to remove all info about them. That is what this function will do. Loop over the object and change each keys value to 'redacted'. Outside of the loop but still in the redactInfo function, run the function redacted() which is a function we created that will update the text on the screen.
 
 // CODE HERE
+function redactInfo(obj) {
+    for(let key in obj){
+        obj[key] = "redacted"
+    }
+    redacted()
+}

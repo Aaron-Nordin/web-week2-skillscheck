@@ -116,6 +116,13 @@ function bigOrSmall(arr) {
 // Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
 
 //Code Here
+function arrayReverser(arr) {
+	let reversed = []
+	for (let i = arr.length -1; i >= 0; i--) {
+		reversed.push(arr[i])
+	}
+	return reversed
+}
 
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
@@ -128,18 +135,21 @@ const myNumbers = [3, 55, 788, 2, 1]
 // First, let's use .map to create a new array that doubles each number. Call the new array 'doubled'
 
 // Code Here
+let doubled = myNumbers.map(x => x*2)
 
 //////////////////PROBLEM 15////////////////////
 
 // Now lets use .filter to only get the nubmer(s) greater than 100. Call the new array 'filtered'
 
 // Code Here
+let filtered = myNumbers.filter(x => x>100)
 
 //////////////////PROBLEM 16////////////////////
 
 // Next up, reduce to get the total of the array. call the new array 'total'
 
 // Code Here
+let total = myNumbers.reduce((x, y) => x + y)
 
 //////////////////PROBLEM 17////////////////////
 

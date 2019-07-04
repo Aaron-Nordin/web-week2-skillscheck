@@ -72,6 +72,7 @@ const colorCopy = faveColors.slice(0)
 // Add a fourth color to the end of the 'colorCopy' array using push
 
 //Code Here
+colorCopy.push("white")
 
 //////////////////PROBLEM 10////////////////////
 
@@ -79,18 +80,36 @@ const colorCopy = faveColors.slice(0)
 const numbers = [1, 2, 3, 4, 5]
 
 //Code Here
+let middleNums = numbers.slice(1, 4)
 
 //////////////////PROBLEM 11////////////////////
 
 // Create an object called 'me' that has these keys with the correct values: firstName, state, age, greeter. firstName will be your name as a string. state will be your current state or providence as a string. age will be your age as a number. greeter will be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the correct values
 
 //Code Here
+let me = {
+	firstName: "Aaron",
+	state: "Utah",
+	age: 32,
+	greeter: () => {
+		return `Hello! My name is ${firstName} and I live in ${state}`
+	}
+}
 
 //////////////////PROBLEM 12////////////////////
 
 // Create a function called 'bigOrSmall' that takes in one parameter, arr. Create a new array inside of bigOrSmall called 'answers'. Loop over the passed in arr param. If the number is GREATER than 100, push 'big' as a string to the answers array. If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function
 
 // Code here
+function bigOrSmall(arr) {
+	let answers = []
+	for(let key in arr){
+		if (arr[key] > 100) {
+			answers.push("big")
+		} else answers.push("small")
+	}
+	return answers
+}
 
 //////////////////PROBLEM 13////////////////////
 

@@ -28,15 +28,14 @@ header {
   align-items: center;
   height: 200px;
   width: 100%;
-  background-color: yellow;
 }
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+#box {
   background-color: aquamarine;
-  height: 100px;
-  width: 10px;
+  height: 165px;
+  width: 175px;
+  border: 10px;
+  border-color: blue;
+  border-radius: 20px;
 }
 .orangeboxes {
   display: flex;
@@ -44,31 +43,33 @@ header {
   align-items: center;
   height: 200px;
   width: 100%;
-  background-color: goldenrod;
 }
-.obox {
+#obox {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(221, 33, 33);
-  height: 100px;
-  width: 10px;
+  background-color: rgb(252, 181, 49);
+  height: 165px;
+  width: 45%;
 }
 .words-pic {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  align-content: center;
 }
 .para {
   width: 350px;
+  font-size: 12px;
 }
 .ele-pic {
   width: 20%;
   height: auto;
+  position: relative;
+  bottom: 7px;
 }
 .footerbox {
-  display: flex;
-  position: relative;
-  background-color: blueviolet;
-  height: 10%;
+  background-color: rgb(73, 58, 100);
+  height: 80px;
+  width: 100%;
 }
